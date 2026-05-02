@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}home{% endblock title %}home
+{% block body %}
+
+<!-- ════════ HERO CAROUSEL ════════ -->
+  <section class="hero-section">
+    <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1600014695804-a30bc8e25fcf?w=1600&q=80" alt="Temple"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Devotion"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=1600&q=80" alt="Peace"/>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-indicators" style="bottom: 1.25rem;">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" style="width:10px;height:10px;border-radius:50%;background:var(--gold);border:none;"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" style="width:10px;height:10px;border-radius:50%;border:none;"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" style="width:10px;height:10px;border-radius:50%;border:none;"></button>
+      </div>
+    </div>
+
+    <!-- Hero overlay text -->
+    <div class="hero-text">
+      <div class="tag">Welcome to our community</div>
+      <h1>Find Peace.<br>Find Purpose.</h1>
+      <p>Join thousands on the path of devotion, wisdom, and inner transformation through the timeless teachings of Bhagavad Gita.</p>
+      <a href="#" class="btn-gold">Explore Now</a>
+      <a href="#" class="btn-outline-white">Watch Video</a>
+    </div>
+  </section>
+<!-- ════════ GALLERY ════════ -->
+  <section class="gallery-section" style="background: var(--cream);">
+    <div class="text-center mb-5">
+      <div class="overline">Moments of Devotion</div>
+      <h2 class="section-title">Our Photo Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <img class="tall" src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=600&q=80" alt="Gallery 1"/>
+      <img src="https://images.unsplash.com/photo-1588416499018-28be00f52e52?w=600&q=80" alt="Gallery 2"/>
+      <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&q=80" alt="Gallery 3"/>
+      <img class="tall" src="https://images.unsplash.com/photo-1485470733090-0081110d87db?w=600&q=80" alt="Gallery 4"/>
+      <img src="https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=600&q=80" alt="Gallery 5"/>
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80" alt="Gallery 6"/>
+    </div>
+  </section>
+
+  <!-- ════════ TESTIMONIALS ════════ -->
+  <section class="testimonials-section">
+    <div class="text-center mb-5">
+      <div class="overline">Voices of Devotees</div>
+      <h2 class="section-title">What People Say</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testi-card">
+          <p class="testi-text">"Coming here changed my life completely. The kirtan, the community, the prasad — everything is infused with so much love and devotion."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&q=80" alt="Priya"/>
+            <div>
+              <div class="testi-name">Priya Sharma</div>
+              <div class="testi-role">Devotee since 2018</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testi-card">
+          <p class="testi-text">"I was searching for meaning and found it here. The Gita study circle gave me clarity and inner strength I never knew I needed."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Arjun"/>
+            <div>
+              <div class="testi-name">Arjun Mehta</div>
+              <div class="testi-role">Member since 2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testi-card">
+          <p class="testi-text">"The festival of Janmashtami here is unlike anything I've experienced. Pure devotion, pure joy. Hare Krishna! I keep coming back."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80" alt="Meena"/>
+            <div>
+              <div class="testi-name">Meena Kapoor</div>
+              <div class="testi-role">Volunteer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CTA ════════ -->
+  <section class="cta-section">
+    <h2>Begin Your Spiritual Journey Today</h2>
+    <p>Join our community, attend a program, or simply come for darshan. All are welcome.</p>
+    <a href="#" class="btn-white">Get in Touch</a>
+  </section>
+
+{% endblock body %}
